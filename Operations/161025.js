@@ -1,13 +1,13 @@
-// let str = 'apple';
-// console.log(str.split('p'));
+let ari = 'apple';
+console.log(ari.split('p'));
 
 
-// let str = 'apple';
-// console.log(str.replaceAll('p','i'));
+let trs = 'apple';
+console.log(trs.replaceAll('p','i'));
 
 
-// let str = 'DevPrasanna';
-// console.log(str.indexOf('P'))
+let der = 'DevPrasanna';
+console.log(der.indexOf('P'))
 
 let str = 'Irokuni';
 console.log(str.includes('f'));
