@@ -38,3 +38,6 @@ let str = 'javaScript';
 for(let eng of str){
     console.log(eng + eng);
 }
+
+const mySet = new Set();
+const anotherSet = new Set([1,2])
