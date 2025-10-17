@@ -41,3 +41,8 @@ for(let eng of str){
 
 const mySet = new Set();
 const anotherSet = new Set([1,2])
+
+console.log('1',mySet.add(3))
+console.log('2',mySet.has(2))
+console.log('3',mySet.delete(1))
+console.log('4',mySet.size)
