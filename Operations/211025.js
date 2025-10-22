@@ -1,7 +1,6 @@
-function checkPrime(prime, arg){
-    prime(arg);
+function checkPrime(prime){
+    return prime;
 }
-
 function prime(arg){
     let ctr = 0;
     for(let i=1; i<=arg; i++){
@@ -15,4 +14,5 @@ function prime(arg){
         console.log('not prime');
     }
 }
-checkPrime(prime, 17);
+let ans = checkPrime(prime);
+ans(17);
