@@ -19,9 +19,10 @@ function login(cbc){
     }, 3000);
 }
 
-function fetchData(){
+function fetchData(fncb){
     setTimeout(() => {
         console.log('data fetched');
+        fncb();
     }, 1000);
 }
 
@@ -34,11 +35,10 @@ function displayData(){
 register(()=>{
     welcome(()=>{
         login(()=>{
-            fetchData();
-            displayData();
+            fetchData(()=>{
+                displayData();
+            });
         });
-        
     });
-    
 })
 console.log('other works');
