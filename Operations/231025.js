@@ -1,19 +1,39 @@
-function register(){
-    console.log("Register called");
+function register(callback){
+    setTimeout(() => {
+        console.log("Register called");
+        callback();
+    }, 2000);
 }
 
 function welcome(){
-    console.log('Welcome to our application');
+    setTimeout(() => {
+        console.log('Welcome to our application');
+    }, 1000);
 }
 
 function login(){
-    console.log('login Here');
+    setTimeout(() => {
+        console.log('login Here');
+    }, 3000);
 }
 
 function fetchData(){
-    console.log('data fetched');
+    setTimeout(() => {
+        console.log('data fetched');
+    }, 1000);
 }
 
 function displayData(){
-    console.log('data is displayed');
+    setTimeout(() => {
+        console.log('data is displayed');
+    }, 1000);
 }
+register(()=>{
+    welcome()
+    login()
+    fetchData()
+    displayData()
+})
+
+
+console.log('other works');
