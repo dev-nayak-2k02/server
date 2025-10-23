@@ -5,15 +5,17 @@ function register(callback){
     }, 2000);
 }
 
-function welcome(){
+function welcome(cb){
     setTimeout(() => {
         console.log('Welcome to our application');
-    }, 1000);
+        cb();
+    }, 2000);
 }
 
-function login(){
+function login(cbc){
     setTimeout(() => {
         console.log('login Here');
+        cbc();
     }, 3000);
 }
 
@@ -28,12 +30,15 @@ function displayData(){
         console.log('data is displayed');
     }, 1000);
 }
+
 register(()=>{
-    welcome()
-    login()
-    fetchData()
-    displayData()
+    welcome(()=>{
+        login(()=>{
+            fetchData();
+            displayData();
+        });
+        
+    });
+    
 })
-
-
 console.log('other works');
