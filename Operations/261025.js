@@ -48,14 +48,34 @@
 
 
 
-let result = false;
-let prom = new Promise((resolve, reject) => {
-    if (result) {
-        resolve('I am fulfilled');
-    } else {
-        reject('I am rejected');
-    }
-})
-console.log(prom);
+// let result = true;
+// let prom = new Promise((resolve, reject) => {
+//     if (result) {
+//         resolve('I am fulfilled');
+//     } else {
+//         reject('I am rejected');
+//     }
+// })
+// console.log(prom);
 
 
+function prom(complete){
+    return new Promise((resolve, reject) => {
+        if (complete) {
+            resolve('I m fulfilled')
+        } else {
+            reject('i m rejected')
+        }
+    });
+}
+
+function fulfilled(res){
+    console.log(res);
+}
+
+function onRejection(error){
+    console.log(error);
+}
+
+prom(true).then(fulfilled);
+prom(false).catch(onRejection);
