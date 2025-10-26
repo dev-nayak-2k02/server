@@ -51,9 +51,9 @@
 let result = false;
 let prom = new Promise((resolve, reject) => {
     if (result) {
-        resolve();
+        resolve('I am fulfilled');
     } else {
-        reject();
+        reject('I am rejected');
     }
 })
 console.log(prom);
