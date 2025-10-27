@@ -47,7 +47,18 @@ function fetchData(cb) {
 }
 
 register(true)
-  .then((res) => {console.log(res); return welcome(true);})
-  .then((res) => {console.log(res); return login(true);})
-  .then((res) => {console.log(res); return fetchData(true);})
-  .then((res) => {console.log(res);})
+  .then((res) => {
+    console.log(res);
+    return welcome(true);
+  })
+  .then((res) => {
+    console.log(res);
+    return login(true);
+  })
+  .then((res) => {
+    console.log(res);
+    return fetchData(true);
+  })
+  .then((res) => {
+    console.log(res);
+  });
