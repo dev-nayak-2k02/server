@@ -1,6 +1,7 @@
 function register() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      // return reject('error in network connection')
       console.log("I am from register");
       resolve();
     }, 1000);
@@ -34,4 +35,11 @@ function fetchData() {
   });
 }
 
-register().then(welcome).then(login).then(fetchData);
+// register().then(welcome).then(login).then(fetchData).catch(error=>console.log("error :",error));
+
+async function authentication(){
+  await register();
+  await welcome();
+}
+
+authentication();
