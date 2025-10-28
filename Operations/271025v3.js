@@ -1,1 +1,4 @@
 let arr = [1,2,3,4,5,6,7,{"a":1,"b":2}];
+arr.forEach(element => {
+    console.log(element);
+});
