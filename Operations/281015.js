@@ -20,6 +20,7 @@ function login() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("I am from login");
+      resolve();
     }, 1000);
   });
 }
@@ -33,4 +34,4 @@ function fetchData() {
   });
 }
 
-register().then();
+register().then(welcome).then(login).then(fetchData);
