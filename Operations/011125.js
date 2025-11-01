@@ -28,3 +28,13 @@
 // higherOrderFunction(function callback(){
 //     console.log('Hello, world!');
 // }, 2000, 6000)
+
+
+function greetKaro(param1){
+    return function (param2){
+        console.log(`${param1} ${param2}`)
+    }
+}
+
+let greetingFnc = greetKaro('hello');
+greetingFnc('harsh')
