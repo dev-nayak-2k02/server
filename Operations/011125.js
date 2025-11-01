@@ -41,3 +41,18 @@
 
 // greetingFnc = greetKaro('Namaste,')
 // greetingFnc('subham')
+
+
+
+// function hof(fn){
+//     let executed = false;
+//     if(!executed){
+//         executed = true;
+//         return fn;
+//     }
+// }
+
+// let ans = hof(function abcd(){
+//     console.log('hello there');
+// })
+// ans();
