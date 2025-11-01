@@ -30,14 +30,14 @@
 // }, 2000, 6000)
 
 
-function greetKaro(param1){
-    return function (param2){
-        console.log(`${param1} ${param2}`)
-    }
-}
+// function greetKaro(param1){
+//     return function (param2){
+//         console.log(`${param1} ${param2}`)
+//     }
+// }
 
-let greetingFnc = greetKaro('hello');
-greetingFnc('harsh')
+// let greetingFnc = greetKaro('hello');
+// greetingFnc('harsh')
 
-let spanishGreeter = greetKaro('Namaste,')
-greetingFnc('subham')
+// greetingFnc = greetKaro('Namaste,')
+// greetingFnc('subham')
