@@ -38,3 +38,6 @@ function greetKaro(param1){
 
 let greetingFnc = greetKaro('hello');
 greetingFnc('harsh')
+
+let spanishGreeter = greetKaro('Namaste,')
+greetingFnc('subham')
