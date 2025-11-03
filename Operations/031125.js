@@ -40,3 +40,21 @@
 // })
 
 
+function prom(complete){
+    return new Promise((resolve, reject)=>{
+        if (complete) {
+            resolve('I am resolved');
+        } else {
+            reject('I am undone');
+        }
+    })
+}
+
+function onCompletion(result) {
+    console.log(result);
+}
+
+function onRejection(error) {
+    console.log(error);
+}
+
