@@ -98,3 +98,5 @@ async function authentication() {
     await register();
     await welcome();
 }
+
+authentication()
