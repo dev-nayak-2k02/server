@@ -40,23 +40,61 @@
 // })
 
 
-function prom(complete){
-    return new Promise((resolve, reject)=>{
-        if (complete) {
-            resolve('I am resolved');
-        } else {
-            reject('I am undone');
-        }
+// function prom(complete){
+//     return new Promise((resolve, reject)=>{
+//         if (complete) {
+//             resolve('I am resolved');
+//         } else {
+//             reject('I am undone');
+//         }
+//     })
+// }
+
+// function onCompletion(result) {
+//     console.log(result);
+// }
+
+// function onRejection(error) {
+//     console.log(error);
+// }
+
+// prom(true).then(onCompletion);
+// prom(false).catch(onRejection);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function register(){
+    return new Promise ((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log('register cleared')
+            resolve();
+        },2000)
     })
 }
 
-function onCompletion(result) {
-    console.log(result);
+
+function welcome(){
+    return new Promise ((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log('welcome to my page!')
+            resolve();
+        },2000)
+    })
 }
 
-function onRejection(error) {
-    console.log(error);
+async function authentication() {
+    await register();
+    await welcome();
 }
-
-prom(true).then(onCompletion);
-prom(false).catch(onRejection);
