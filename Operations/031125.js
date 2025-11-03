@@ -58,3 +58,5 @@ function onRejection(error) {
     console.log(error);
 }
 
+prom(true).then(onCompletion);
+prom(false).catch(onRejection);
