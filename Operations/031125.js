@@ -19,34 +19,24 @@
 // }
 
 
+// function register(fnc){
+//     setTimeout(()=>{
+//         console.log('regster done');
+//         fnc()
+//     })
+// }
+
+// function welcome(fnc){
+//     setTimeout(()=>{
+//         console.log('welcome done');
+//         fnc()
+//     })
+// }
+
+// register(()=>{
+//     welcome(()=>{
+//         console.log('done')
+//     })
+// })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-function register(fnc){
-    setTimeout(()=>{
-        console.log('regster done');
-        fnc()
-    })
-}
-
-function welcome(fnc){
-    setTimeout(()=>{
-        console.log('welcome done');
-        fnc()
-    })
-}
-
-register(()=>{
-    welcome()
-})
