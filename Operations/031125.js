@@ -10,7 +10,7 @@ function prime(a){
         return 
     }
     let ctr = 0;
-    for(let i = 2; i<=a; i++){
+    for(let i = 1; i<=a; i++){
         if(a%i == 0){
             ctr++;
         }
