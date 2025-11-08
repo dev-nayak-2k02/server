@@ -10,7 +10,7 @@ function throttle(cb, delay) {
 }
 
 let newFnc = throttle(() => {
-  let num = Math.floor(Math.random());
+  let num = Math.random();
   console.log(num);
 }, 2000);
 
