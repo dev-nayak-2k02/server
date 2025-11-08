@@ -1,4 +1,13 @@
-let a = 10;
-for(let i = a; i<=20; i++){
-    
+function mainFnc(cb){
+    let executed = false;
+    return function (){
+        if(!executed){
+            executed = true;
+            cb();
+        }
+    }
 }
+
+let resFnc = mainFnc(()=>{
+    console.log('Hello ji, kaise ho!');
+})
