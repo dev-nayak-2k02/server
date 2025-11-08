@@ -1,2 +1,4 @@
-let a = 387;
-console.log(parseInt(a%10));
+let a = 10;
+for(let i = a; i<=20; i++){
+    
+}
