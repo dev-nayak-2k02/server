@@ -81,26 +81,24 @@
 
 
 //HOFS(Higher Order Function Expression)
-let primeCheck = function(fn, val) {
-    return fn(val);  // return the result
-}
+// let primeCheck = function(fn, val) {
+//     return fn(val);  
+// }
+// function prime(num) {
+//     if (num <= 1) return 'Not Prime';
+//     let count = 0;
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i === 0) {
+//             count++;
+//         }
+//     }
 
-function prime(num) {
-    if (num <= 1) return 'Not Prime';
-
-    let count = 0;
-    for (let i = 1; i <= num; i++) {
-        if (num % i === 0) {
-            count++;
-        }
-    }
-
-    if (count === 2) {
-        return 'Prime Number';
-    } else {
-        return 'Not-prime Number';
-    }
-}
-
-let ans = primeCheck(prime, 12);
-console.log(ans);
+//     if (count === 2) {
+//         return 'Prime Number';
+//     } else {
+//         return 'Not-prime Number';
+//     }
+// }
+// let ans = primeCheck(prime, 11);
+// let res = ans
+// console.log(res)
