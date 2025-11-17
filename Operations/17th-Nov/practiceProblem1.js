@@ -102,3 +102,5 @@
 // let ans = primeCheck(prime, 11);
 // let res = ans
 // console.log(res)
+
+
