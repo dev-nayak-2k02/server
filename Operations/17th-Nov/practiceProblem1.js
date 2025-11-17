@@ -81,3 +81,26 @@
 
 
 //HOFS(Higher Order Function Expression)
+let primeCheck = function(fn, val) {
+    return fn(val);  // return the result
+}
+
+function prime(num) {
+    if (num <= 1) return 'Not Prime';
+
+    let count = 0;
+    for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+            count++;
+        }
+    }
+
+    if (count === 2) {
+        return 'Prime Number';
+    } else {
+        return 'Not-prime Number';
+    }
+}
+
+let ans = primeCheck(prime, 12);
+console.log(ans);
