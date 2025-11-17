@@ -103,4 +103,14 @@
 // let res = ans
 // console.log(res)
 
+//object
+// let obj = new Object();
+// obj.name = 'john';
+// obj.age = 12;
+// obj.desc = 'i"m ineviteble';
+// console.log(obj.age);
 
+//object Freezing
+// Object.freeze(obj)
+// obj.name = 'Avi';
+// console.log(obj.name);
