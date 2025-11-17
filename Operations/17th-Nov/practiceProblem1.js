@@ -23,4 +23,4 @@
 
 //includes
 // let str = 'twinPagelumFermentiKenteNari';
-// console.log(str.includes('a'))
+// console.log(str.includes('a'));
