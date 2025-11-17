@@ -78,3 +78,6 @@
 // res.get()
 // res.set(11);
 // res.get()
+
+
+//HOFS(Higher Order Function Expression)
