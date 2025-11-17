@@ -49,7 +49,13 @@
 
 
 //for..of
-let str = 'string';
-for(let ch of str){
-    console.log(ch+ch);
-}
+// let str = 'string';
+// for(let ch of str){
+//     console.log(ch+ch);
+// }
+
+
+//iife(Imediately Invoked Function Expression)
+(function(){
+    console.log('IIFE');
+})
