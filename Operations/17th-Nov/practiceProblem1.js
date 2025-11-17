@@ -125,6 +125,14 @@
 
 
 //filter
-let arr = [1,2,3,4];
-let ans = arr.filter((item)=>item !== item);
-consolele.log(ans)
+// let arr = [1,2,3,4];
+// let ans = arr.filter((item)=>item !== item);
+// console.log(ans)
+
+
+//reduce
+// let arr = [1,2,3,4];
+// let ans = arr.reduce((acc, val)=> acc+val,0);
+// console.log(ans)
+
+
