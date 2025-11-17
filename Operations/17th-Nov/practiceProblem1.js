@@ -56,6 +56,25 @@
 
 
 //iife(Imediately Invoked Function Expression)
-(function(){
-    console.log('IIFE');
-})
+//example1
+// let arr = (function(){
+//     return 'IIFE';
+// })()
+// console.log(arr)
+//----------------------------------------------------------------------------------------------------------
+//expample2
+// let res = (function abcd(){
+//     let a = 12;
+//     return {
+//         set: function(val){
+//             a = val;
+//         },
+//         get: function(){
+//             console.log(a);
+//         }
+//     }
+// })();
+
+// res.get()
+// res.set(11);
+// res.get()
