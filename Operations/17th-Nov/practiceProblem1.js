@@ -21,4 +21,6 @@
 // let str = 'UltraBee';
 // console.log(str.indexOf('a'));
 
-//
+//includes
+// let str = 'twinPagelumFermentiKenteNari';
+// console.log(str.includes('a'))
