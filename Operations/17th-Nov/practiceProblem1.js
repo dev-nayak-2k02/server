@@ -122,3 +122,9 @@
 //     return item*2;
 // })
 // console.log(ans);
+
+
+//filter
+let arr = [1,2,3,4];
+let ans = arr.filter((item)=>item !== item);
+consolele.log(ans)
