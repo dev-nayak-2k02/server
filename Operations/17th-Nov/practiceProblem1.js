@@ -24,3 +24,32 @@
 //includes
 // let str = 'twinPagelumFermentiKenteNari';
 // console.log(str.includes('a'));
+
+
+// let abcd = function(a,b,c){
+//     console.log(a,b,c)
+// }
+// abcd(11,12,14);
+
+
+//forEach
+// let arr = [10,11,12,13];
+// arr.forEach(item=>console.log(item))
+
+
+//for..in
+// let obj = {
+//     Name:'Dev',
+//     Degree:'BCA',
+//     Age:'22'
+// }
+// for(let k in obj){
+//     console.log(`${k}:${obj[k]}`);
+// }
+
+
+//for..of
+let str = 'string';
+for(let ch of str){
+    console.log(ch+ch);
+}
