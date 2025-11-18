@@ -4,9 +4,8 @@ obj.age = 12;
 obj.desc = 'A very handsome guy';
 
 for(let key in obj){
-    let ctr = obj[key]
-    if(ctr == 'john'){
-        ctr = 'dev';
+    if(obj[key] == 'john'){
+        obj[key] = 'dev';
     }
 }
 
