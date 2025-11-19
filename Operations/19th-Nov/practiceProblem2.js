@@ -41,5 +41,8 @@ function prom(complete){
         }
     })
 }
-prom(true).then((res)=>{console.log(res)});
-prom(false).then((err)=>{console.log(err)});
+async function result() {
+    let data = await prom(true)
+    console.log(data)
+}
+result();
