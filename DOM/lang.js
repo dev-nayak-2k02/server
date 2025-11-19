@@ -15,11 +15,13 @@ let check = false;
 btn.addEventListener('click',()=>{
     if (!check) {
         h5.style.color = 'green';
+        h5.innerHTML = 'Friends'
         btn.innerHTML = 'Remove friend'
         check = true;
     } else {
         h5.style.color = 'red';
+        h5.innerHTML = 'stranger'
         btn.innerHTML = 'Add friend'
-        check = true;
+        check = false;
     }
 })
