@@ -9,3 +9,17 @@
 
 
 
+let h5 = document.querySelector('h5');
+let btn = document.querySelector('button');
+let check = false;
+btn.addEventListener('click',()=>{
+    if (!check) {
+        h5.style.color = 'green';
+        btn.innerHTML = 'Remove friend'
+        check = true;
+    } else {
+        h5.style.color = 'red';
+        btn.innerHTML = 'Add friend'
+        check = true;
+    }
+})
