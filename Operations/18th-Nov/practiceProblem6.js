@@ -23,3 +23,17 @@
 // res();
 
 
+function throt(fn, delay){
+    let lastCall = 0;
+    return function (){
+        let current = Date.now();
+        if(current - lastCall >= delay){
+            lastCall = current;
+            fn();
+        }
+    }
+}
+let newFnc = throt(()=>{
+    console.log('executed')
+}, 3000)
+newFnc();
