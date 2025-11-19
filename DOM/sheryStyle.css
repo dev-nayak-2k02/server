@@ -9,11 +9,33 @@ body{
     height: 100%;
     width: 100%;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#box{
+/* #box{
     height: 400px;
     width: 400px;
     background-color: aliceblue;
+} */
+
+.card {
+    background-color: aliceblue;
+    padding: 1rem 1rem 0 1rem;
+    height: 20vh;
+    width: 40vh;
+    text-align: center;
+    border-radius: 10px;
 }
 
+.card h5 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.card button {
+    font-size: medium;
+    padding: 0.4rem 1rem;
+    margin: 0.4rem;
+}
