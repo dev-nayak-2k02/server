@@ -33,5 +33,13 @@
 
 
 function prom(complete){
-    
+    return new Promise((resolve, reject) => {
+        if(complete){
+            resolve('resolved');
+        } else {
+            reject('rejected');
+        }
+    })
 }
+prom(true).then((res)=>{console.log(res)});
+prom(false).then((err)=>{console.log(err)});
