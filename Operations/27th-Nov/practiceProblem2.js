@@ -1,4 +1,4 @@
 function btnClick(){
-    let a = document.getElementById('btn');
-    console.log(a)
+    let a = document.getElementsByClassName('btn');
+    console.log(a.innerHTML)
 }
