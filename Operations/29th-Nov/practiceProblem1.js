@@ -12,5 +12,4 @@ for(let i = 0; i<arr.length; i++){
         temp = 0;
     }
 }
-
 console.log(arr)
