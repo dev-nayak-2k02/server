@@ -9,7 +9,7 @@ for(let i = 0; i<arr.length; i++){
             check = arr[j];
             arr[j] = temp;
         }
-        temp = 0
+        temp = 0;
     }
 }
 
