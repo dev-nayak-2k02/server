@@ -20,7 +20,7 @@ function register(cb){
 
 function welcome(cb){
     setTimeout(() => {
-        console.log('Welcome to register');
+        console.log('Welcome to Welcome');
         cb();
     }, 2000);
 }
@@ -44,3 +44,14 @@ function displayData(){
         console.log('Welcome to displayData');
     }, 2000);
 }
+
+
+register(()=>{
+    welcome(()=>{
+        login(()=>{
+            fetchData(()=>{
+                displayData();
+            })
+        })
+    })
+})
