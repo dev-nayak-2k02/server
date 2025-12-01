@@ -8,4 +8,4 @@ function promiseCaller(args){
     })
 }
 
-promiseCaller(true).then()
+promiseCaller(true).then((msg)=>console.log(msg))
