@@ -11,11 +11,6 @@
 // promiseCaller(true).then((msg)=>console.log(msg))
 
 
-
-
-
-
-
 function register(cb){
     setTimeout(() => {
         console.log('Welcome to register');
