@@ -50,7 +50,6 @@
 
 
 
-
 let removeVowels = str => {
     let copy = str
     let count = 0;
