@@ -50,16 +50,16 @@
 
 
 
-let removeVowels = str => {
-    let copy = [...str];
-    let count = 0;
-    for(let k of copy){
-        if( k === 'A'||k ==='I'||k ==='E'||k ==='O'||k ==='U'||k ==='a'||k ==='i'||k ==='e'||k ==='o'||k ==='u'){
-            copy[count] = '';
-        }
-        count++;
-    }
-    return copy;
-}
-let ans = removeVowels('Apple')
-console.log(...ans);
+// let removeVowels = str => {
+//     let copy = [...str];
+//     let count = 0;
+//     for(let k of copy){
+//         if( k === 'A'||k ==='I'||k ==='E'||k ==='O'||k ==='U'||k ==='a'||k ==='i'||k ==='e'||k ==='o'||k ==='u'){
+//             copy[count] = '';
+//         }
+//         count++;
+//     }
+//     return copy;
+// }
+// let ans = removeVowels('Apple')
+// console.log(...ans);
