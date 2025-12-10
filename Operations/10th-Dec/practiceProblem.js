@@ -28,3 +28,20 @@
 // };
 // let answer = checkStringIsPalindrome("NOW");
 // console.log(answer);
+
+
+
+
+
+let executeOnce = (fn) =>{
+    let executed = false;
+    return function (){
+        if(!executed){
+            executed = true;
+            fn();
+        }
+    }
+}
+let answer = executeOnce(()=>{
+    console.log('I got executed once')
+})
