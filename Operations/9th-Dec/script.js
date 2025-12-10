@@ -17,14 +17,14 @@
 // console.log(ans);
 
 
-let checkPerfectSquare = a =>{
-    if(a <= 0) return false;
-    for (let index = 1; index < a; index++) {
-        if(index*index == a){
-            return true;
-        }
-    }
-    return false;
-}
-let answer = checkPerfectSquare(5);
-console.log(answer);
+// let checkPerfectSquare = a =>{
+//     if(a <= 0) return false;
+//     for (let index = 1; index < a; index++) {
+//         if(index*index == a){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+// let answer = checkPerfectSquare(5);
+// console.log(answer);
