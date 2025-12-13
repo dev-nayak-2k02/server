@@ -4,7 +4,7 @@ let completion = (args)=>{
             "name": "DevPrasanna",
             "designation": "Currently works in GeeCoding"
         }
-        const statusCode = 200;
+        const statusCode = 600;
         if(statusCode == 200){
             resolve(apiResponse)
         } else {
@@ -17,3 +17,8 @@ let ans = completion(true).then(result=>{
         console.log(`${k}: ${result[k]}`)
     }
 })
+
+
+const retry = (callback, retries, delay) =>{
+
+}
