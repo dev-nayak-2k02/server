@@ -21,6 +21,3 @@ let ans = completion(true).then(result=>{
 })
 
 
-const retry = (callback, retries, delay) =>{
-
-}
