@@ -13,5 +13,7 @@ let completion = (args)=>{
     })
 }
 let ans = completion(true).then(result=>{
-    console.log(result.name)
+    for(let k in result){
+        console.log(`${k}: ${result[k]}`)
+    }
 })
