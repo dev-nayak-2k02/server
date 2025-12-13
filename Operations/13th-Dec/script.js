@@ -16,6 +16,8 @@ let ans = completion(true).then(result=>{
     for(let k in result){
         console.log(`${k}: ${result[k]}`)
     }
+}).catch(err=>{
+    console.log(err)
 })
 
 
