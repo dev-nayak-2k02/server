@@ -21,11 +21,9 @@
 // })
 
 
-
-
 let arr = [11,12,11,11,11,13,14];
 let obj = {};
 arr.forEach((val)=>{
     (obj[val] === undefined) ? (obj[val] = 1) : (obj[val]++)
 })
-console.log(obj)
+console.log(obj);
