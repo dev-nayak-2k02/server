@@ -26,4 +26,12 @@ let obj = {};
 arr.forEach((val)=>{
     (obj[val] === undefined) ? (obj[val] = 1) : (obj[val]++)
 })
-console.log(obj);
+let ctr = 0
+let highrstOccuringNumber = 0
+for(let k in obj){
+    if(obj[k]>ctr){
+        ctr = String(obj[k]);
+        highrstOccuringNumber = k
+    }
+}
+console.log(`The highest occuring number is: ${highrstOccuringNumber} and it has occured ${ctr} times`)
