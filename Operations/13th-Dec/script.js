@@ -34,4 +34,4 @@ for(let k in obj){
         highrstOccuringNumber = k
     }
 }
-console.log(`The highest occuring number is: ${highrstOccuringNumber} and it has occured ${ctr} times`)
+console.log(`The highest occuring number is: ${String(highrstOccuringNumber)} and it has occured ${ctr} times`)
