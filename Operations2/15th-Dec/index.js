@@ -248,7 +248,13 @@ app.get("/search", (req, res)=> {
     //     console.log(" ");
     // })
 
-    res.json(students)
+    let obj;
+    users.map((item) => {
+        obj += item;
+    })
+
+    res.json(obj)
+
 
 })
 app.listen(PORT, ()=>{
