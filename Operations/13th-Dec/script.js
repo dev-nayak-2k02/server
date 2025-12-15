@@ -21,17 +21,23 @@
 // })
 
 
-let arr = [11,12,11,11,11,13,14];
-let obj = {};
-arr.forEach((val)=>{
-    (obj[val] === undefined) ? (obj[val] = 1) : (obj[val]++)
-})
-let ctr = 0
-let highrstOccuringNumber = 0
-for(let k in obj){
-    if(obj[k]>ctr){
-        ctr = obj[k];
-        highrstOccuringNumber = Number(k)
-    }
-}
-console.log(`The highest occuring number is: ${(highrstOccuringNumber)} and it has occured ${ctr} times`)
+
+
+// let arr = [11,12,11,11,11,13,14];
+// let obj = {};
+// arr.forEach((val)=>{
+//     (obj[val] === undefined) ? (obj[val] = 1) : (obj[val]++)
+// })
+// let ctr = 0
+// let highrstOccuringNumber = 0
+// for(let k in obj){
+//     if(obj[k]>ctr){
+//         ctr = obj[k];
+//         highrstOccuringNumber = Number(k)
+//     }
+// }
+// console.log(`The highest occuring number is: ${(highrstOccuringNumber)} and it has occured ${ctr} times`)
+
+
+
+
