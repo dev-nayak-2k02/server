@@ -28,3 +28,21 @@
 // }
 // let result = checkPerfectSquare(4)
 // console.log(result)
+
+let checkPrime = (num) => {
+    let ctr = 0
+    if(num === 2) return true
+    for(let i=1; i<=num; i++){
+        if(num%i == 0){
+            ctr += 1;
+        }
+    }
+    if(ctr == 2) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+let ans = checkPrime(7) 
+console.log(ans);
