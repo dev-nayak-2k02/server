@@ -28,10 +28,27 @@
 // console.log(obj)
 
 
-for(let i=1; i<=4; i++){
-    let star = '';
-    for(let j=1; j<=i; j++){
-        star += '*';
-    }
-    console.log(star);
-}
+// for(let i=1; i<=4; i++){
+//     let star = '';
+//     for(let j=1; j<=i; j++){
+//         star += '*';
+//     }
+//     console.log(star);
+// }
+
+
+// let ans = Math.floor(Math.random()*6)+1
+// console.log(ans)
+
+// let arr = [1,2,3,4];
+// let ans = arr.reduce((acc, inival) => {
+//     return acc+inival;
+// })
+// console.log(ans);
+
+
+let arr = [10, 20, 30, 40]
+let ans = arr.map((item) => {
+    return item;
+})
+console.log(ans)
