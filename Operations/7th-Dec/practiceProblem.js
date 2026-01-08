@@ -11,8 +11,14 @@
 
 
 
-let checker = function(a) {
-    a%5 == 0 ? console.log('true') : console.log('false');
+// let checker = function(a) {
+//     a%5 == 0 ? console.log('true') : console.log('false');
+// }
+// let ans = checker(4);
+// console.log(ans);
+
+
+let checkOdd = a =>{
+    (a%2!=0) ? console.log('it is odd number') : console.log('it is not odd');
 }
-let ans = checker(4);
-console.log(ans);
+let ans = checkOdd(4);
