@@ -18,7 +18,15 @@
 // console.log(ans);
 
 
+// let checkOdd = a =>{
+//     (a%2!=0) ? console.log('it is odd number') : console.log('it is not odd');
+// }
+// let ans = checkOdd(4);
+
+
+
 let checkOdd = a =>{
     (a%2!=0) ? console.log('it is odd number') : console.log('it is not odd');
 }
 let ans = checkOdd(4);
+
