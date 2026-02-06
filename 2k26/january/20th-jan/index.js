@@ -1,9 +1,12 @@
 const express = require('express')
 const dotenv = require('dotenv')
-const app = express()
+const connectDB = require('./config/db')
 dotenv.config()
+connectDB()
+const app = express()
+app.use("/api/v1", require('./routes/userRoutes'))
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
-    console.log(`server running at PORT.No: ${PORT}`);
+    console.log(`sever is running at PORT: ${PORT}`)
 })
