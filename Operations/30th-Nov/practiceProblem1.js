@@ -6,7 +6,3 @@ var createCounter = function(n) {
 };
 const counter = createCounter(-2)
 counter();
-counter();
-counter();
-counter();
-counter();
