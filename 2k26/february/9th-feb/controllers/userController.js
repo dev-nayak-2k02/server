@@ -1,37 +1,65 @@
-const userModel = require('../model/userModel')
-const registerController = async(req, res)=>{
-    try {
-        const{userName,email,password} = req.body;
-        if(!userName || !email || !password){
-            return(
-                res.status(500).send({
-                    success:false,
-                    message:'fields are compolsory'
-                })
-            )
-        }
-        const existingUser = await userModel.findOne({email})
-        if(existingUser){
-            return(
-                res.status(500).send({
-                    success:false,
-                    message:'user already exists'
-                })
-            )
-        }
-        const newUser = await userModel({userName,email,password})
-        newUser.save()
-        res.status(200).send({
-            success:true,
-            message:'record added successfully',
-            newUser
-        })
-    } catch (error) {
-        res.status(500).send({
-            success:false,
-            message:'register API',
-            error
-        })
+const userModel = require("../model/userModel");
+const registerController = async (req, res) => {
+  try {
+    const { userName, email, password } = req.body;
+    if (!userName || !email || !password) {
+      return res.status(500).send({
+        success: false,
+        message: "fields are compolsory",
+      });
     }
-}
-module.exports = registerController
+    const existingUser = await userModel.findOne({ email });
+    if (existingUser) {
+      return res.status(500).send({
+        success: false,
+        message: "user already exists",
+      });
+    }
+    const newUser = await userModel({ userName, email, password });
+    newUser.save();
+    res.status(200).send({
+      success: true,
+      message: "record added successfully",
+      newUser,
+    });
+  } catch (error) {
+    res.status(500).send({
+      success: false,
+      message: "register API",
+      error,
+    });
+  }
+};
+const loginController = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(500).send({
+        success: false,
+        message: "All fields are compolsory",
+      });
+    }
+    const existingUser = await userModel.findOne({ email, password });
+    if (!existingUser) {
+      return res.status(500).send({
+        success: false,
+        message: "invalid credentials", 
+      });
+    }
+    res.status(200).send({
+        success:true,
+        message:'login successful',
+        user:{
+            username:existingUser.userName,
+            email:existingUser.email
+        }
+    })
+  } catch (error) {
+    res.status(500).send({
+      success: false,
+      message: "register API",
+      error,
+    });
+  }
+};
+module.exports = { registerController, loginController };
