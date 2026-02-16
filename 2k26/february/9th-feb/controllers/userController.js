@@ -1,4 +1,5 @@
 const userModel = require("../model/userModel");
+const bcrypt = require("bcryptjs")
 const registerController = async (req, res) => {
   try {
     const { userName, email, password } = req.body;
@@ -15,7 +16,13 @@ const registerController = async (req, res) => {
         message: "user already exists",
       });
     }
-    const newUser = await userModel({ userName, email, password });
+    const salt = await bcrypt.genSalt(10);
+    console.log(salt)
+    console.log("Hello")
+    const hashedPassword = await bcrypt.hash(password, salt);
+    console.log(hashedPassword)
+    const newUser = await userModel({ userName, email, password:hashedPassword });
+    // const newUser = await userModel({ userName, email, password });
     newUser.save();
     res.status(200).send({
       success: true,
@@ -39,12 +46,23 @@ const loginController = async (req, res) => {
         message: "All fields are compolsory",
       });
     }
-    const existingUser = await userModel.findOne({ email, password });
+    const existingUser = await userModel.findOne({ email });
     if (!existingUser) {
       return res.status(500).send({
         success: false,
         message: "invalid credentials", 
       });
+    }
+    const result = await bcrypt.compare(password, existingUser.password);
+    console.log("Hello")
+    console.log(res)
+    if(!result){
+      return(
+        res.status(500).send({
+          success:false,
+          message:"Invalid credentials"
+        })
+      )
     }
     res.status(200).send({
         success:true,
