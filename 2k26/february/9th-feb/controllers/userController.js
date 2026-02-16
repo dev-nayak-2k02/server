@@ -13,14 +13,14 @@ const registerController = async (req, res) => {
     if (existingUser) {
       return res.status(500).send({
         success: false,
-        message: "user already exists",
+        message: "user already exists"
       });
     }
     const salt = await bcrypt.genSalt(10);
-    console.log(salt)
-    console.log("Hello")
+    // console.log(salt)
+    // console.log("Hello")
     const hashedPassword = await bcrypt.hash(password, salt);
-    console.log(hashedPassword)
+    // console.log(hashedPassword)
     const newUser = await userModel({ userName, email, password:hashedPassword });
     // const newUser = await userModel({ userName, email, password });
     newUser.save();
