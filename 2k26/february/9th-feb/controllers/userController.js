@@ -55,7 +55,7 @@ const loginController = async (req, res) => {
     }
     const result = await bcrypt.compare(password, existingUser.password);
     console.log("Hello")
-    console.log(res)
+    console.log(result)
     if(!result){
       return(
         res.status(500).send({
