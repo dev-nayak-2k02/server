@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 const Register = () => {
   const [mail, setMail] = useState('')
   const [text, setText] = useState('')
   const [pwd, setPwd] = useState('')
 
-  function showData(){
-    console.log(mail);
-    console.log(text);
-    console.log(pwd);
+  async function showData(){
+    const data = {userName:text, email:mail, password:pwd};
+    const res = await axios.post("http://localhost:3070/api/v1/register",data);
+    console.log(res.data);
   }
 
   function clearData() {
