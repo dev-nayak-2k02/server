@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
 const Register = () => {
   const [mail, setMail] = useState("");
   const [text, setText] = useState("");
@@ -50,6 +51,7 @@ const Register = () => {
         onChange={(e) => setPwd(e.target.value)}
       />
       <br />
+      <h2>already have an account <Link to="/Login">login</Link></h2>
       <button onClick={showData}>register</button>
       <button onClick={clearData}>clear</button>
     </div>

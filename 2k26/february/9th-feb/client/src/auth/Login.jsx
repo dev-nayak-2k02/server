@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 const Login = () => {
   const [mail, setMail] = useState("");
   const [pwd, setPwd] = useState("");
@@ -41,6 +42,7 @@ const Login = () => {
         onChange={(e) => setPwd(e.target.value)}
       />
       <br />
+      <h2>new to the app <Link to="/Register">register</Link></h2>
       <button onClick={showData}>Login</button>
       <button onClick={clearData}>clear</button>
     </div>
