@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 const Register = () => {
   const [mail, setMail] = useState("");
@@ -17,8 +17,8 @@ const Register = () => {
       toast.success(res.data.message);
       console.log(res.data);
     } catch (error) {
-      toast.error('something went wrong')
-      console.log(error)
+      toast.error("something went wrong");
+      console.log(error);
     }
   }
 
@@ -51,7 +51,9 @@ const Register = () => {
         onChange={(e) => setPwd(e.target.value)}
       />
       <br />
-      <h2>already have an account <Link to="/Login">login</Link></h2>
+      <h2>
+        already have an account <Link to="/Login">login</Link>
+      </h2>
       <button onClick={showData}>register</button>
       <button onClick={clearData}>clear</button>
     </div>
