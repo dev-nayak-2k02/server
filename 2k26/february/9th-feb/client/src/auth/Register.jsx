@@ -48,6 +48,7 @@ const Register = () => {
         type="password"
         value={pwd}
         placeholder="enter password"
+        
         onChange={(e) => setPwd(e.target.value)}
       />
       <br />

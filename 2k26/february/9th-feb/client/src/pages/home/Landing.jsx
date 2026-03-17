@@ -14,6 +14,7 @@ const Landing = () => {
               <div className={styles.buttons}>
                 <Link className={styles.linkButtons} to="/Login"><button>Login</button></Link>
                 <Link className={styles.linkButtons} to="/Register"><button>Register</button></Link>
+                <Link className={styles.linkButtons} to="/Todos"><button>todos</button></Link>
                 
               </div>
           </div>

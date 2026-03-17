@@ -4,6 +4,7 @@ import toast,{ Toaster } from 'react-hot-toast';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Landing from './pages/home/Landing';
+import Todos from './components/Todos';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/Home' element={<Home/>}/>
         <Route path='/login' element={<Login/>} />
         <Route path='/Register' element={<Register/>} />
+        <Route path='/Todos' element={<Todos/>}/>
       </Routes>
       <Toaster/>
     </>

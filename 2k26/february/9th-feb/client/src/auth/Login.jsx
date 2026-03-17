@@ -8,7 +8,7 @@ const Login = () => {
 
   async function showData() {
     try {
-      const data = { userName: text, email: mail, password: pwd };
+      const data = { email: mail, password: pwd };
       const res = await axios.post(
         "http://localhost:3070/api/v1/register",
         data,
