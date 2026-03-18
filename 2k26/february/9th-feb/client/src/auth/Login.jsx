@@ -11,7 +11,7 @@ const Login = () => {
       const data = { email: mail, password: pwd };
       const res = await axios.post(
         "http://localhost:3070/api/v1/register",
-        data,
+        data
       );
       toast.success(res.data.message);
       console.log(res.data);

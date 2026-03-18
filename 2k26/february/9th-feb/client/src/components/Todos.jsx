@@ -3,7 +3,6 @@ const Todos = () => {
     const[todos, setTodos] = useState()
     function handletodos(e){
         e.preventDefault();
-
     }
   return (
     <>
