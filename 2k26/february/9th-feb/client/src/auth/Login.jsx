@@ -10,7 +10,7 @@ const Login = () => {
     try {
       const data = { email: mail, password: pwd };
       const res = await axios.post(
-        "http://localhost:3070/api/v1/register",
+        "http://localhost:3070/api/v1/login",
         data
       );
       toast.success(res.data.message);

@@ -5,8 +5,10 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Landing from './pages/home/Landing';
 import Todos from './components/Todos';
+import { useEffect } from 'react';
 
 function App() {
+  const[count, setCount] = useEffect(0)
 
   return (
     <>

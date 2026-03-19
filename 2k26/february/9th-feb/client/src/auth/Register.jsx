@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { data, Link } from "react-router-dom";
+import Landing from "../pages/home/Landing";
 const Register = () => {
   const [mail, setMail] = useState("");
   const [text, setText] = useState("");
@@ -16,6 +17,9 @@ const Register = () => {
       );
       toast.success(res.data.message);
       console.log(res.data);
+      if (res.data.success == true) {
+        <Landing />
+      }
     } catch (error) {
       toast.error("something went wrong");
       console.log(error);
@@ -48,7 +52,6 @@ const Register = () => {
         type="password"
         value={pwd}
         placeholder="enter password"
-        
         onChange={(e) => setPwd(e.target.value)}
       />
       <br />
