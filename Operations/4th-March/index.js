@@ -7,8 +7,11 @@
 
 
 
-let arr = [1, 2, 3, 4, 5];
-let newArr = arr.map((num)=>{
-    return num;
-})
-console.log(newArr);
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.map((num)=>{
+//     return num;
+// })
+// console.log(newArr);
+
+
+window.open('https://javascript.info/')
