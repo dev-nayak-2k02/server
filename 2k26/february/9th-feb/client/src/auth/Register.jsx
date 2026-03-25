@@ -3,6 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { data, Link } from "react-router-dom";
 import Landing from "../pages/home/Landing";
+import AuthServices from "../pages/services/AuthServices";
 const Register = () => {
   const [mail, setMail] = useState("");
   const [text, setText] = useState("");
@@ -11,10 +12,7 @@ const Register = () => {
   async function showData() {
     try {
       const data = { userName: text, email: mail, password: pwd };
-      const res = await axios.post(
-        "http://localhost:3070/api/v1/register",
-        data,
-      );
+      const res = await AuthServices.registerAuth(data)
       toast.success(res.data.message);
       console.log(res.data);
       if (res.data.success == true) {

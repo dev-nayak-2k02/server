@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import AuthServices from "../pages/services/AuthServices";
 const Login = () => {
   const [mail, setMail] = useState("");
   const [pwd, setPwd] = useState("");
@@ -9,10 +10,7 @@ const Login = () => {
   async function showData() {
     try {
       const data = { email: mail, password: pwd };
-      const res = await axios.post(
-        "http://localhost:3070/api/v1/login",
-        data
-      );
+      const res = await AuthServices.loginAuth(data);
       toast.success(res.data.message);
       console.log(res.data);
     } catch (error) {
