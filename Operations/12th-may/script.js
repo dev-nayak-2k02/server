@@ -1,7 +1,16 @@
-let a = Number(prompt("Enter 1st number: "));
-let b = Number(prompt("Enter 2nd number: "));
-let add = (a,b)=>{
-    return a+b;
+let a = Number(prompt("enter a number: "));
+function checkPerfect(a){
+    let mod,sum,n;
+    n = a;
+    for(let i = 0; i<=a; i++){
+        mod = a%i;
+        if(mod == 0){
+            sum += i;
+        }
+    }
+    if(n === s){
+        console.log("its a perfect mnumber")
+    } else {
+        console.log("its not a perfectnumber");
+    }
 }
-let res = add(a,b);
-console.log(`sum = ${res}`);
