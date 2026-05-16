@@ -29,9 +29,15 @@
 // const [e1, e2] = charArray;
 // console.log(e1.name, e2.name);
 
-let arr1 = [1, 2, 3];
-console.log([999,...arr1,90]);
+// let arr1 = [1, 2, 3];
+// console.log([999,...arr1,90]);
 
+
+
+function spreadParam(a,...b){
+    console.log(a,b);
+}
+spreadParam(1,2,3,4,5,6,7,8,9,10)
 
 
 
