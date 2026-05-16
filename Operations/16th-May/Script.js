@@ -32,12 +32,22 @@
 // let arr1 = [1, 2, 3];
 // console.log([999,...arr1,90]);
 
-
-
-function spreadParam(a,...b){
-    console.log(a,b);
-}
-spreadParam(1,2,3,4,5,6,7,8,9,10)
+const personsArray = [
+    {
+        name:'Dev Nayak',
+        age:40
+    }, {
+        name: 'Shivam',
+        age:45
+    }, {
+        name: 'shubham',
+        age:50
+    }
+]
+const result = personsArray.filter((val, index)=>{
+    return (val.age < 50);
+})
+console.log(result);
 
 
 
