@@ -49,8 +49,8 @@ const personsArray = [
 // })
 // console.log(result);
 
-const result = personsArray.find((val, index)=>{
-    return val.name === "Dev Nayak";
+const result = personsArray.findIndex((val, index)=>{
+    return val.age === 45;
 });
 console.log(result);
 
