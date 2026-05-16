@@ -47,6 +47,7 @@
 // })
 // console.log(getData);
 
+
 let getListOfProductsElement = document.querySelector(".list-of-products");
 function renderProducts(getProducts) {
   getListOfProductsElement.innerHTML = getProducts
