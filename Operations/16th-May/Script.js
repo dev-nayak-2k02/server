@@ -11,21 +11,30 @@
 // const { operation } = person;
 // console.log(operation);
 
-let charArray = [
-  {
-    id: 1123,
-    name: "Dev Prasanna",
-    age: 23,
-    operation: "Web-developer",
-  },
-  {
-    id: 1124,
-    name: "Pushkarashin",
-    age: 24,
-    operation: "data-Analyst",
-  }
-];
+// let charArray = [
+//   {
+//     id: 1123,
+//     name: "Dev Prasanna",
+//     age: 23,
+//     operation: "Web-developer",
+//   },
+//   {
+//     id: 1124,
+//     name: "Pushkarashin",
+//     age: 24,
+//     operation: "data-Analyst",
+//   }
+// ];
+
+// const [e1, e2] = charArray;
+// console.log(e1.name, e2.name);
+
+let arr1 = [1, 2, 3];
+console.log([999,...arr1,90]);
 
 
-const [e1, e2] = charArray;
-console.log(e1.name, e2.name);
+
+
+
+
+
