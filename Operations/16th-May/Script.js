@@ -43,11 +43,17 @@ const personsArray = [
         name: 'shubham',
         age:50
     }
-]
-const result = personsArray.filter((val, index)=>{
-    return (val.age < 50);
-})
+];
+// const result = personsArray.filter((val, index)=>{
+//     return (val.age < 50);
+// })
+// console.log(result);
+
+const result = personsArray.find((val, index)=>{
+    return val.name === "Dev Nayak";
+});
 console.log(result);
+
 
 
 
