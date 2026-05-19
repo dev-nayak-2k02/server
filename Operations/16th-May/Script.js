@@ -60,3 +60,18 @@ console.log(result);
 
 
 
+let descriptionElement = document.querySelector('.desc');
+function renderer(p){
+    descriptionElement.innerHTML = p.map(a=>`<p>${p.description}</p>`)
+}
+async function fetchList() {
+    try {
+        const apiResponse = await fetch('https://dummyjson.com/products', ()=>{
+            method:'GET'
+        })
+        let res = await apiResponse.json();
+
+    } catch (error) {
+        console.log(error);
+    }
+}
