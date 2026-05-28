@@ -49,19 +49,23 @@
 // })
 // console.log(ans)
 
-const productElement = document.querySelector(".header");
-function newProductListFront(getProducts){
-    productElement.innerHTML = getProducts.map((a)=>`${a.title}`).join(" ")
+const getListOfProductsElement = document.querySelector(".header");
+function renderProducts(getProducts) {
+  getListOfProductsElement.innerHTML = getProducts
+    .map((a) => `<p>${a.description}</p>`)
+    .join(" ");
 }
-async function getProductLists() {
+async function fetchListOfProducts() {
   try {
     const apiResponse = await fetch("https://dummyjson.com/products", {
       method: "GET",
     });
-    const res = await apiResponse.json();
-    if(res?.products?.length > 0 ) newProductListFront(res?.products)
+    const result = await apiResponse.json();
+    console.log(result);
+    if (result?.products?.length > 0) renderProducts(result?.products);
   } catch (error) {
     console.log(error);
   }
 }
-getProductLists()
+
+fetchListOfProducts();

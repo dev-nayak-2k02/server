@@ -54,16 +54,30 @@
 // console.log(arr=[]);
 
 
-const dummyObject = {
-    id:12,
-    name:'dev_nayak',
-    jobTitle:'Web dev',
-    desc:'SDE-I'
-}
+// const dummyObject = {
+//     id:12,
+//     name:'dev_nayak',
+//     jobTitle:'Web dev',
+//     desc:'SDE-I'
+// }
 
 // for(const i in dummyObject){
 //     console.log(`${i}: ${String(dummyObject[i])}`);
 // }
 
-const{ id,name,jobTitle } = dummyObject;
-console.log(id,name,jobTitle);
+// const{ id,name,jobTitle } = dummyObject;
+// console.log(id,name,jobTitle);
+
+
+
+
+// const array = ['ad','ed','eddy'];
+// const [e,a,b] = array;
+// console.log(e,a,b);
+
+
+const array = [1,2,3,4,5,6,7];
+let newArray = array.filter((value, index)=>{
+    return (value%2 === 0)
+});
+console.log(newArray);
