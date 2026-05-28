@@ -40,24 +40,32 @@
 // let num = Number(prompt("Enter a number:"));
 // let res = console.log(checkEvenOdd(num));
 
-let a = Number(prompt("Enter a four digit number:  "));
-let arrayMaker = (a)=>{
-    let arr = [];
-    let mod;
-    while (a>0) {
-        mod = a%10;
-        arr.push(mod);
-        a = Math.floor(a/10);
-    }
-    return arr.reverse();
+// let a = Number(prompt("Enter a four digit number:  "));
+// let arrayMaker = (a)=>{
+//     let arr = [];
+//     let mod;
+//     while (a>0) {
+//         mod = a%10;
+//         arr.push(mod);
+//         a = Math.floor(a/10);
+//     }
+//     return arr.reverse();
+// }
+// let newArr = arrayMaker(a);
+// let i = 0;
+// while (i < newArr.length) {
+//     if (newArr[i]>newArr[i+1]) {
+//         console.log(`${newArr[i]} is greater`);
+//     } else {
+//         console.log(`${newArr[i+1]} is greater`);
+//     }
+//     i+=2;
+// }
+
+
+let arr = new Array(10);
+for(let i = 0; i<10; i++){
+    arr[i] = Number(prompt('enter a number: '));
 }
-let newArr = arrayMaker(a);
-let i = 0;
-while (i < newArr.length) {
-    if (newArr[i]>newArr[i+1]) {
-        console.log(`${newArr[i]} is greater`);
-    } else {
-        console.log(`${newArr[i+1]} is greater`);
-    }
-    i+=2;
-}
+console.log([...arr]);
+

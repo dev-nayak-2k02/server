@@ -33,15 +33,37 @@
 
 
 
-let executeOnce = (fn) =>{
-    let executed = false;
-    return function (){
-        if(!executed){
-            executed = true;
-            fn();
-        }
-    }
+// let executeOnce = (fn) =>{
+//     let executed = false;
+//     return function (){
+//         if(!executed){
+//             executed = true;
+//             fn();
+//         }
+//     }
+// }
+// let answer = executeOnce(()=>{
+//     console.log('I got executed once')
+// })
+
+
+
+
+
+// let arr = [1,2,3];
+// console.log(arr=[]);
+
+
+const dummyObject = {
+    id:12,
+    name:'dev_nayak',
+    jobTitle:'Web dev',
+    desc:'SDE-I'
 }
-let answer = executeOnce(()=>{
-    console.log('I got executed once')
-})
+
+// for(const i in dummyObject){
+//     console.log(`${i}: ${String(dummyObject[i])}`);
+// }
+
+const{ id,name,jobTitle } = dummyObject;
+console.log(id,name,jobTitle);
