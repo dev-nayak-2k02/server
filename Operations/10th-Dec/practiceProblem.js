@@ -76,8 +76,9 @@
 // console.log(e,a,b);
 
 
-const array = [1,2,3,4,5,6,7];
-let newArray = array.filter((value, index)=>{
-    return (value%2 === 0)
-});
-console.log(newArray);
+// const array = [1,2,3,4,5,6,7];
+// let newArray = array.filter((value, index)=>{
+//     return (value%2 === 0)
+// });
+// console.log(newArray);
+
