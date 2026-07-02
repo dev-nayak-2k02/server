@@ -82,3 +82,36 @@
 // });
 // console.log(newArray);
 
+
+
+// function getName(name){
+//     return name;
+// }
+// let a = false;
+// let b = false;
+// console.log(a || b);
+
+
+// let showRecipe = true;
+// function getOne(nm){
+//     return nm;
+// }
+
+// function getTwo(nm) {
+//     return nm;
+// }
+// showRecipe ? console.log(getOne('Dev')):console.log(getTwo('Pizza'));
+
+
+const id = 1;
+const prodName = 'Apple Watch';
+const rating = 5;
+const product1 = {
+    description:'Product 2 desc',
+    id,
+    prodName,
+    rating
+}
+
+const {description} = product1;
+console.log(description);
