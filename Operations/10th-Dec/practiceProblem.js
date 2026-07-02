@@ -103,15 +103,50 @@
 // showRecipe ? console.log(getOne('Dev')):console.log(getTwo('Pizza'));
 
 
-const id = 1;
-const prodName = 'Apple Watch';
-const rating = 5;
-const product1 = {
-    description:'Product 2 desc',
-    id,
-    prodName,
-    rating
-}
+// const id = 1;
+// const prodName = 'Apple Watch';
+// const rating = 5;
+// const product1 = {
+//     description:'Product 2 desc',
+//     id,
+//     prodName,
+//     rating
+// }
 
-const {description} = product1;
-console.log(description);
+// const {description} = product1;
+// console.log(description);
+
+
+
+// const array = [1,2,3];
+// const[a,b,c] = array;
+// console.log(b);
+
+
+
+const personsArray = [
+    {
+        name:'Dev',
+        age:50,
+        country:'USA'
+    },
+    {
+        name:'shivam',
+        age:23,
+        country:'EU'
+    },
+    {
+        name:'swaroop',
+        age:24,
+        country:'USA'
+    },
+    {
+        name:'singham',
+        age:26,
+        country:'NZ'
+    }
+]
+let getAllItems = personsArray.find((val, index)=>{
+    return val.name === 'swaroop';
+})
+console.log(getAllItems)
