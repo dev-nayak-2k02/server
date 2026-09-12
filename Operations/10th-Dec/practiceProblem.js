@@ -146,7 +146,65 @@ const personsArray = [
         country:'NZ'
     }
 ]
-let getAllItems = personsArray.find((val, index)=>{
-    return val.name === 'swaroop';
-})
-console.log(getAllItems)
+// let getAllItems = personsArray.find((val, index)=>{
+//     return val.name === 'swaroop';
+// })
+// console.log(getAllItems);
+
+
+// let someExperiment = personsArray.every((val,index)=>{
+//     return val.age === 26;
+// })
+// console.log(someExperiment);
+
+
+// let findIndexExperiment = personsArray.findIndex((val, index)=>{
+//     return val.age == 26;
+// })
+// console.log(findIndexExperiment);
+
+
+// let num = 100;
+// let sumOfNTerms = Math.floor(num*(num+1)/2);
+// console.log(sumOfNTerms);
+
+
+// for(let i = 0; i<51; i++){
+//     if(i%3 == 0){
+//         console.log(i)
+//     }
+// }
+
+
+
+// let user = +(prompt("Enter a number: "));
+// for(let i=1; i<user+1; i++){
+//     if(i%2 == 0){
+//         console.log(i ,'is even');
+//     } else {
+//         console.log(i,' is odd');
+//     }
+// }
+
+
+
+
+// for(let i = 1; i<101; i++){
+//     if(i%3 == 0 && i%5 == 0){
+//         console.log(i);
+//     }
+// }
+
+
+// for(let i = 1; i<101; i++){
+//     if(i%7 == 0){
+//         break;
+//     }
+//     console.log(i);
+// }
+
+
+for(let i = 1; i<21; i++){
+    if(i%3 == 0) continue;    
+    console.log(i);
+}
