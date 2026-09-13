@@ -205,8 +205,50 @@ const personsArray = [
 
 
 
-function getAnswer(age){
-  if(age < 18) return 'not allowed';
-  return 'allowed';
-}
-console.log(getAnswer(56))
+// function getAnswer(age){
+//   if(age < 18) return 'not allowed';
+//   return 'allowed';
+// }
+// console.log(getAnswer(56))
+
+
+
+// function h(){
+//   return;
+// }
+// console.log(h());
+
+
+// function runn(val){
+//   console.log(val())
+// }
+// runn(function(){
+//   return 'hello'
+// })
+
+
+// function outer(){
+//   let count = 0;
+//   return function (){
+//     count++;
+//     return count;
+//   }
+// }
+// let mainFnc = outer();
+// console.log(mainFnc());
+// console.log(mainFnc());
+
+
+
+
+let access = (function() {
+  let score = 0;
+  return{
+    getScore: function(){
+      console.log(score);
+    },
+    setScore: function(val){
+      score = val
+    }
+  }
+})()
