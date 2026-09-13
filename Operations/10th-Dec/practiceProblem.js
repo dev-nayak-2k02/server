@@ -174,13 +174,39 @@ const personsArray = [
 
 // }
 
-let ctr = 0;
-for (let i = 1; i < 100; i++) {
-  if (i % 3 == 0) {
-    ctr++;
-  }
-  if(ctr == 5){
-    break;
-  }
-  console.log();
+// let ctr = 0;
+// for (let i = 1; i < 101; i++) {
+//   if (i % 2 != 0) {
+//     ctr++;
+//     console.log(i);
+//   }
+//   if(ctr == 5){
+//     break;
+//   } 
+// }
+
+
+
+// let num = () => 12;
+// console.log(num());
+
+
+
+
+// let tot = 0;
+// function giveTotal(...num){
+//   num.forEach(element => {
+//     tot = tot + element;
+//   });
+//   return tot;
+// }
+// console.log(giveTotal(12,11,34,1));
+
+
+
+
+function getAnswer(age){
+  if(age < 18) return 'not allowed';
+  return 'allowed';
 }
+console.log(getAnswer(56))
