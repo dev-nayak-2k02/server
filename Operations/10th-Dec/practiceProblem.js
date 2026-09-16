@@ -99,28 +99,28 @@
 // const[a,b,c] = array;
 // console.log(b);
 
-const personsArray = [
-  {
-    name: "Dev",
-    age: 50,
-    country: "USA",
-  },
-  {
-    name: "shivam",
-    age: 23,
-    country: "EU",
-  },
-  {
-    name: "swaroop",
-    age: 24,
-    country: "USA",
-  },
-  {
-    name: "singham",
-    age: 26,
-    country: "NZ",
-  },
-];
+// const personsArray = [
+//   {
+//     name: "Dev",
+//     age: 50,
+//     country: "USA",
+//   },
+//   {
+//     name: "shivam",
+//     age: 23,
+//     country: "EU",
+//   },
+//   {
+//     name: "swaroop",
+//     age: 24,
+//     country: "USA",
+//   },
+//   {
+//     name: "singham",
+//     age: 26,
+//     country: "NZ",
+//   },
+// ];
 // let getAllItems = personsArray.find((val, index)=>{
 //     return val.name === 'swaroop';
 // })
@@ -241,14 +241,59 @@ const personsArray = [
 
 
 
-let access = (function() {
-  let score = 0;
-  return{
-    getScore: function(){
-      console.log(score);
-    },
-    setScore: function(val){
-      score = val
-    }
-  }
-})()
+// let access = (function() {
+//   let score = 0;
+//   return{
+//     getScore: function(){
+//       console.log(score);
+//     },
+//     setScore: function(val){
+//       score = val
+//     }
+//   }
+// })();
+
+
+
+
+
+// function discountCalculator(discount){
+//   return function(value){
+//     let discAmount = value * (discount/100);
+//     let finalAmount = value - discAmount;
+//     return finalAmount;
+//   }
+// }
+// console.log(discountCalculator(20)(340))
+
+
+
+
+
+
+// function clouser(){
+//   let ctr = 0;
+//   return function(){
+//     ctr++;
+//     return ctr;
+//   }
+// }
+// let c = clouser();
+// console.log(c());
+// console.log(c());
+// console.log(c());
+
+
+// console.log(count);  
+// var count = 42;
+
+const data = {
+  name: 'Dev Prasanna',
+  roll: 12,
+  desg: 'MCA'
+}
+// data.role = 'student';
+// const keyName = 'year';
+// data[keyName] = '1st';
+data['year'] = '2nd';
+console.log(data);
