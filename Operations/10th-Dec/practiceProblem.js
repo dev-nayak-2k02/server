@@ -287,13 +287,40 @@
 // console.log(count);  
 // var count = 42;
 
-const data = {
-  name: 'Dev Prasanna',
-  roll: 12,
-  desg: 'MCA'
-}
+// const data = {
+//   name: 'Dev Prasanna',
+//   roll: 12,
+//   desg: 'MCA'
+// }
 // data.role = 'student';
 // const keyName = 'year';
 // data[keyName] = '1st';
-data['year'] = '2nd';
-console.log(data);
+// data['year'] = '2nd';
+// console.log(data);
+
+
+
+// const arr = [11,12,34,56];
+// arr.push(12);
+// console.log(arr);
+
+
+
+// console.log(typeof []);
+// console.log(typeof null);
+// console.log(typeof 123n);
+// console.log(typeof function(){});
+
+
+
+// let str = 'dev';
+// let strArray = [...str];
+// str = strArray.reverse().join('');
+// console.log(str);
+
+
+
+let str = 'dev';
+for(let character of str){
+    console.log(character);
+}
