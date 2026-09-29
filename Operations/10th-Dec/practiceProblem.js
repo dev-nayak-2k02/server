@@ -320,7 +320,78 @@
 
 
 
-let str = 'dev';
-for(let character of str){
-    console.log(character);
-}
+// let str = 'dev';
+// let k = '';
+// for(let i = str.length-1; i>=0; i--){
+//     k += str[i];
+// }
+// console.log(k);
+
+
+
+// let fnc = (function (){
+//     let val = 0;
+//     return {
+//         getter: function (){
+//             console.log(val)
+//         },
+//         setter: function (a){
+//             val = a;
+//         }
+//     }
+// })();
+
+// let arr = [10, 20, 30];
+// let newArr = arr.reduce((acc, val)=>{
+//     return acc + val;
+// }, 0)
+// console.log(newArr);
+
+
+
+// let obj = new Object();
+// console.log(obj)
+
+
+// let obj1 = {
+//     name:'dev',
+//     age:23,
+//     email:'test@gmail.com'
+// }
+// let obj2 = {
+//     name:'ved',
+//     age:24,
+//     email:'test2@gmail.com'
+// }
+// for(let key in obj1){
+//     console.log(key, obj1[key])
+// }
+
+// let obaba = {...obj1};
+// console.log(obaba);
+
+
+
+
+
+
+// let obj1 = {
+//     name:'dev',
+//     age:23,
+//     email:'test@gmail.com',
+//     true:'dd'
+// }
+// console.log(age,obj1['age']);
+
+
+
+
+
+
+// const user = {
+//     'first-name': "harsh"
+// };
+// let {'first-name': firstName} = user
+// console.log(firstName)
+
+
