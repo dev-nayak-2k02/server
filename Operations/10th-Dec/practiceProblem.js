@@ -395,3 +395,13 @@
 // console.log(firstName)
 
 
+let obj = {
+    name: 'Dev Prasanna',
+    age:21,
+    roll:'MCA025'
+}
+obj['emp-name']='qwerty'
+console.log(obj);
+
+
+
