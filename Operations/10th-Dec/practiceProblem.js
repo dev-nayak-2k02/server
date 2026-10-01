@@ -398,10 +398,20 @@
 let obj = {
     name: 'Dev Prasanna',
     age:21,
-    roll:'MCA025'
+    roll:'MCA025',
+    address:{
+        state:'Odisha',
+        dist:'SBPR'
+    }
 }
-obj['emp-name']='qwerty'
-console.log(obj);
+// let {name, roll, address:{state}} = obj
+// obj['emp-name']='qwerty'
+// console.log(!!(obj.address.dist));
+for(let key in obj){
+    console.log(key, obj[key]);
+}
+// console.log(roll)
+
 
 
 
