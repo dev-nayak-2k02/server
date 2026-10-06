@@ -413,16 +413,68 @@
 // console.log(roll)
 
 
-let obj = {
-    name: 'Dev Prasanna',
-    age:21,
-    roll:'MCA025',
-    address:{
-        state:'Odisha',
-        dist:'SBPR'
-    }
-}
+// let obj = {
+//     name: 'Dev Prasanna',
+//     age:21,
+//     roll:'MCA025',
+//     address:{
+//         state:'Odisha',
+//         dist:'SBPR'
+//     }
+// }
 
-for(let key in obj) {
-    console.log(key, obj[key]);
-}
+// for(let key in obj) {
+//     console.log(key, obj[key]);
+// }
+// let obj2 = Object.assign({con:'gen1'}, obj)
+// console.log(obj2)
+// let obj3 = JSON.parse(JSON.stringify(obj2));
+// console.log(obj3);
+// obj.address.state = 'jharkhand'
+
+
+
+
+// let object = {
+//     "first-name": "Harsh"
+// }
+// console.log(object["first-name"]);
+
+
+
+
+// let key = 'age'
+// const user = {
+//     age:26
+// }
+// console.log(user[key]);
+
+
+
+
+
+// let object = {
+//     "first-name": "Harsh",
+//     "second-name": "Harvajan",
+//     "third-name": "harmanjeet"
+// }
+// let {"first-name":firstName}=object;
+// console.log(firstName);
+// Object.entries(object).forEach((val)=>{
+//     console.log(JSON.stringify(`${val[0]} : ${val[1]}`));
+// })
+
+
+
+
+// let key = 'admin';
+// const user = {
+//     name: 'devPrasanna',
+//     [key]: 1988
+// }
+// console.log(user[key]); 
+
+
+
+let arr = new Array(12);
+console.log(arr);
