@@ -182,16 +182,11 @@
 //   }
 //   if(ctr == 5){
 //     break;
-//   } 
+//   }
 // }
-
-
 
 // let num = () => 12;
 // console.log(num());
-
-
-
 
 // let tot = 0;
 // function giveTotal(...num){
@@ -202,22 +197,16 @@
 // }
 // console.log(giveTotal(12,11,34,1));
 
-
-
-
 // function getAnswer(age){
 //   if(age < 18) return 'not allowed';
 //   return 'allowed';
 // }
 // console.log(getAnswer(56))
 
-
-
 // function h(){
 //   return;
 // }
 // console.log(h());
-
 
 // function runn(val){
 //   console.log(val())
@@ -225,7 +214,6 @@
 // runn(function(){
 //   return 'hello'
 // })
-
 
 // function outer(){
 //   let count = 0;
@@ -237,9 +225,6 @@
 // let mainFnc = outer();
 // console.log(mainFnc());
 // console.log(mainFnc());
-
-
-
 
 // let access = (function() {
 //   let score = 0;
@@ -253,10 +238,6 @@
 //   }
 // })();
 
-
-
-
-
 // function discountCalculator(discount){
 //   return function(value){
 //     let discAmount = value * (discount/100);
@@ -265,11 +246,6 @@
 //   }
 // }
 // console.log(discountCalculator(20)(340))
-
-
-
-
-
 
 // function clouser(){
 //   let ctr = 0;
@@ -283,8 +259,7 @@
 // console.log(c());
 // console.log(c());
 
-
-// console.log(count);  
+// console.log(count);
 // var count = 42;
 
 // const data = {
@@ -298,27 +273,19 @@
 // data['year'] = '2nd';
 // console.log(data);
 
-
-
 // const arr = [11,12,34,56];
 // arr.push(12);
 // console.log(arr);
-
-
 
 // console.log(typeof []);
 // console.log(typeof null);
 // console.log(typeof 123n);
 // console.log(typeof function(){});
 
-
-
 // let str = 'dev';
 // let strArray = [...str];
 // str = strArray.reverse().join('');
 // console.log(str);
-
-
 
 // let str = 'dev';
 // let k = '';
@@ -326,8 +293,6 @@
 //     k += str[i];
 // }
 // console.log(k);
-
-
 
 // let fnc = (function (){
 //     let val = 0;
@@ -347,11 +312,8 @@
 // }, 0)
 // console.log(newArr);
 
-
-
 // let obj = new Object();
 // console.log(obj)
-
 
 // let obj1 = {
 //     name:'dev',
@@ -370,11 +332,6 @@
 // let obaba = {...obj1};
 // console.log(obaba);
 
-
-
-
-
-
 // let obj1 = {
 //     name:'dev',
 //     age:23,
@@ -383,17 +340,11 @@
 // }
 // console.log(age,obj1['age']);
 
-
-
-
-
-
 // const user = {
 //     'first-name': "harsh"
 // };
 // let {'first-name': firstName} = user
 // console.log(firstName)
-
 
 // let obj = {
 //     name: 'Dev Prasanna',
@@ -411,7 +362,6 @@
 //     console.log(key, obj[key]);
 // }
 // console.log(roll)
-
 
 // let obj = {
 //     name: 'Dev Prasanna',
@@ -432,26 +382,16 @@
 // console.log(obj3);
 // obj.address.state = 'jharkhand'
 
-
-
-
 // let object = {
 //     "first-name": "Harsh"
 // }
 // console.log(object["first-name"]);
-
-
-
 
 // let key = 'age'
 // const user = {
 //     age:26
 // }
 // console.log(user[key]);
-
-
-
-
 
 // let object = {
 //     "first-name": "Harsh",
@@ -464,17 +404,65 @@
 //     console.log(JSON.stringify(`${val[0]} : ${val[1]}`));
 // })
 
-
-
-
 // let key = 'admin';
 // const user = {
 //     name: 'devPrasanna',
 //     [key]: 1988
 // }
-// console.log(user[key]); 
+// console.log(user[key]);
+
+// let arr = new Array(12);
+// console.log(arr.length);
 
 
 
-let arr = new Array(12);
-console.log(arr);
+
+
+// let res = (function () {
+//   let a = 12;
+//   return {
+//     setter: (val) => {
+//       a = val;
+//     },
+//     getter: () => {
+//       console.log(a);
+//     },
+//   };
+// })();
+
+// let isEvenOdd = (val)=>{
+//     if(val%2 == 0) return 'The number is Even';
+//     else return 'The number is Odd'; 
+// }
+// console.log(isEvenOdd(123))
+
+
+
+// let checkNumber = (val)=>{
+//     if(val > 0) return 'The number is Positive';
+//     else if(val<0) return 'The Number is Negative';
+//     else return 'The number is 0'
+// }
+// console.log(checkNumber(-12));
+
+
+
+
+// let checkGreatest = (n1, n2, n3)=> {
+//     if(n1>n2 && n1>n3) return n1;
+//     else if(n2>n1 && n2>n3) return n2;
+//     else return n3;
+// }
+// console.log(checkGreatest(12,32,10));
+
+
+
+
+let sumOfNTerms = (val)=>{
+    let ctr = 0;
+    for(let i=1; i<=val; i++){
+        ctr += i;
+    }
+    return ctr;
+}
+console.log(sumOfNTerms(2))
