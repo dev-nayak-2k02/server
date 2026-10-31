@@ -458,11 +458,309 @@
 
 
 
-let sumOfNTerms = (val)=>{
-    let ctr = 0;
-    for(let i=1; i<=val; i++){
-        ctr += i;
-    }
-    return ctr;
-}
-console.log(sumOfNTerms(2))
+// let sumOfNTerms = (val)=>{
+//     let ctr = 0;
+//     for(let i=1; i<=val; i++){
+//         ctr += i;
+//     }
+//     return ctr;
+// }
+// console.log(sumOfNTerms(5))
+
+
+
+
+// var a = 12;
+// var a = 13;
+// console.log(a);
+
+
+// const pi = 3.14;
+// pi++;
+// console.log(pi);
+
+
+
+// let isEmpty = (value)=>{
+//     if(value === null||value === undefined|| value === "") return 'given value is falsy';
+//     else return 'given value is truthy';
+// }
+// console.log(isEmpty(""));
+
+
+
+
+// function calc(a, b, op) {
+//     switch(op){
+//         case "+": 
+//             console.log(a+b);
+//             break;
+//         case "-": 
+//             console.log(a-b);
+//             break;
+//         case "*": 
+//             console.log(a*b);
+//             break;
+//         case "/":
+//             if(a<b) { [a,b] = [b,a] };
+//             console.log(a/b);
+//             break;
+//         default:
+//             break;
+//     }
+// }
+// calc(2,4,"/");
+
+
+
+
+// let score = 182;
+// let results = (score<30)?"fail":(score<=50)?"Average":(score<=75)?"Good":(score<=100)?"Excellent":'enter Number under 100';
+// console.log(results);
+
+
+
+
+// let checkVowel = function (letter){
+//     if('aeiou'.includes(letter.toLowerCase())) return "It's a Vowel";
+//     else return "It's not a vowel";
+// }
+
+// console.log(checkVowel('i'));
+// console.log(checkVowel('c'));
+// console.log([]+[]);
+
+
+
+
+
+
+
+// let fnc = num => num*num;
+// console.log(fnc(5));
+
+
+
+
+
+//BMI calculator-->
+// function bmiCalc(wt,ht){
+//     let result = parseInt(wt/ht);
+//     return result;
+// }
+// console.log(bmiCalc(70,1.77));
+
+
+
+
+//Greeting function
+// let greet = (name) => `Hello ${name}, how are you`;
+// console.log(greet("DevPrasanna"));
+
+
+
+
+//sum using rest
+// let sumRest = function (...num){
+//     return num.reduce((acc, val)=>{
+//         return acc+val;
+//     },0)
+// }
+// console.log(sumRest(11,23,21,34))
+
+
+
+
+
+//clouser counter funnction
+// function counterFnc(){
+//     let ctr = 0;
+//     return function(){
+//         ctr++;
+//         return ctr;
+//     }
+// }
+// let store = counterFnc();
+// console.log(store());
+
+
+
+
+
+
+//HOF's
+// function outerFunction(x){
+//     return function(y){
+//         return x*y;
+//     }
+// }
+// let result = outerFunction(5);
+// console.log(result(5));
+
+
+
+
+// let h1 = document.querySelector('h1');
+// h1.outerHTML = "<h4 class=\"h1\">IDHAR HAI INDEX</h4>"
+// console.dir(h1);
+
+
+// let a = document.querySelector("a");
+// let setter = a.getAttribute("href");
+// a.removeAttribute("href")
+// a.setAttribute(setter, "https://chatgpt.com/?openaicom_referred=true")
+
+
+
+
+
+
+//use function to log even numbers in an array
+// let arr = Array(5);
+// let evenPusherFunction = (...num)=>{
+//     num.filter(val=>{
+//         if(val%2 === 0){
+//             arr.push(val)
+//         }
+//     })
+// }
+// evenPusherFunction(12,14,16,17,19);
+// console.log(arr);
+
+
+
+
+
+
+//add tax using pure function
+// let tax = 23;
+// let taxAdder = (val)=>{
+//     val+=tax;
+//     return val;
+// }
+// console.log(taxAdder(12));
+
+
+
+
+
+
+
+
+// (()=>{
+//     console.log('hello there!');
+// })()
+
+
+
+
+
+
+// let discountCounter = ()=>{
+//     return function(price, disc) {
+//         return price - (price*disc/100);
+//     }
+// }
+// let result = discountCounter();
+// console.log(result(12,10));
+
+
+
+
+
+
+
+// let toUpperCase = ()=>{
+//     return function(val){
+//         return val.toUpperCase();
+//     }
+// }
+// let str = toUpperCase();
+// console.log(str("AirWat"));
+
+
+
+
+
+// const obj = {
+//     nam:'dev',
+//     siNo: 1123,
+//     crNo:"122j212jrdn",
+//     div:'Engineer'
+// };
+// let [first, second] = ["a", "b", "c"];
+// const {nam, siNo, crNo} = obj;
+// console.log(first, second);
+// console.log(nam, siNo, crNo);
+
+
+
+
+
+
+
+//create array print each students name:
+// let namArray = ['devPrasanna', 'durgaPrasad', 'mahindraChinmaya'];
+// namArray.forEach(val=>{
+//     console.log(val);
+// })
+
+
+
+//fiter even numbers from array
+// let evenFilter = [12,1,2,118];
+// let result = evenFilter.filter((val)=>{
+//     return val%2==0;
+// })
+// console.log(result);
+
+
+
+//add GST
+// let priceList = [112,14,645,98];
+// const gstRate = 18;
+// let gstAddedAmount = priceList.map((val)=>{
+//     let gstAmount = val * gstRate/100;
+//     return val += gstAmount;
+// });
+// console.log(gstAddedAmount);
+
+
+
+//reduce
+// let salary = [2500000, 1500000, 3000000];
+// let totalPayroll = salary.reduce((totalAmout, valuePrice)=> {
+//     return totalAmout + valuePrice;
+// },0)
+// console.log('total payroll: ',totalPayroll);
+
+
+
+//grade find with methods support
+// let arrayMarks = [{nam:"subodh",grd:'B'},{nam:"bodhigriva",grd:'C'},{nam:"sangram",grd:'A'},{nam:"devPrasanna",grd:'A+'}];
+// let gradeFinder = arrayMarks.some((val)=>{
+//     return val.grd == 'A';
+// });
+// console.log(gradeFinder);
+
+
+
+// let arr = [1,2,3,4,5,6,7];
+// let [first, second, third, fourth] = [...arr];
+// console.log(first,second,third,fourth);
+
+
+
+// let objectExample = {
+//     nam:"devPrasanna",
+//     siNo:'1190',
+//     empID:'BCG!0@#3456Po34'
+// }
+// const {nam:names, siNo:serialNumber, empID:employeeIdentity} = objectExample;
+// console.log(names);
+
+
+
+let fruits = ["apple", "mango", "peach"];
+let conCat = fruits.slice(0,2)
+console.log(conCat);
