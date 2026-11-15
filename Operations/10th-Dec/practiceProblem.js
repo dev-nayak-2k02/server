@@ -761,6 +761,262 @@
 
 
 
-let fruits = ["apple", "mango", "peach"];
-let conCat = fruits.slice(0,2)
-console.log(conCat);
+// let fruits = ["apple", "mango", "peach"];
+// let conCat = fruits.slice(0,2)
+// console.log(conCat);
+
+// console.log(!!'sheryians');
+
+
+
+
+
+// let con = (function (){
+//     let once = 1;
+//     return {
+//         getter: function(val){
+//             once = val;
+//         },
+//         setter: function(){
+//             console.log(once);
+//         }
+//     }
+// })();
+
+
+
+
+// let sum = (...num)=>{
+//     return num.reduce((ac, curr) => {return ac+curr})
+// }
+// console.log(sum(1,2,3,4,5,6));
+
+
+// let mainFnc = ()=>{
+//     let count = 0;
+//     return function() {
+//         count++;
+//         console.log(count);
+//     }
+// }
+// let res = mainFnc();
+
+
+// let evenPusher = (...num)=>{
+//     let arr = [];
+//     for(i=0; i<num.length; i++){
+//         if(num[i]%2 == 0){
+//             arr.push(num[i])
+//         }
+//     }
+//     return arr;
+// }
+// console.log(evenPusher(1,2,3,4,5,6,7,8,9,10))
+
+
+
+
+
+// let arr = [1,2,3,4,5];
+// let osu = ['a','b','c',['ab','cd','ef']];
+// let arrObj = [{a:'qw4'},{b:'qw5'},{b:'qw6'}];
+// let newArr = arr.concat(osu, arrObj);
+// console.log(newArr);
+
+
+
+
+// const arr = [1,2,3,4,5];
+// const newArr = arr.join(' + ');
+// const tostringArr = arr.toString();
+// console.log(newArr);
+// console.log(tostringArr);
+// console.log(Array.isArray(tostringArr));
+// console.log(Array.isArray(arr));
+// console.log(Array.isArray(newArr));
+
+
+
+
+// const arr = [1,2,3,4,5];
+// arr.forEach((val, index, list)=> {
+//     console.log(`value: ${val}, index:${index}: [${[...list]}]`);
+// });
+// const newArr = arr.reverse();
+// console.log(newArr);
+// const aplpha = ['February','January','April','June'];
+// const newAlpha = aplpha.sort((a, b)=>{return a-b})
+// console.log(newAlpha)
+// const sen = arr.sort((a, b)=> a-b);
+// console.log(sen);
+
+
+
+
+
+// const aris = ['d','c','a','b'];
+// const res = aris.sort();
+// console.log(res);
+// const resRev = res.toReversed();
+// console.log(resRev);
+// console.log(aris.slice(1,3));
+
+
+
+
+
+// const arr = [1,2,3,4,5,6,7,8,9,10];
+// const newArr = arr.toSpliced(2,6,[1,2,3,4,5,6,7]);
+// console.log(arr);
+// console.log(newArr);
+
+
+
+
+// const arrayExample2 = [1,2,3,4,5,6]
+// let arrayExample = [11,23,45,32];
+// console.log(!!(Array.isArray(arrayExample)))
+// const conc = arrayExample.concat(arrayExample2);
+// console.log(conc.join(''));
+// console.log();
+
+
+// const arr = [12,11,14,23];
+// const newArr = arr.toReversed(arr)
+// console.log(newArr)
+// console.log(arr.reverse());
+
+
+
+const transactions = [
+  { category: "food", amount: 200 },
+  { category: "travel", amount: 500 },
+  { category: "food", amount: 300 },
+  { category: "shopping", amount: 700 },
+  { category: "travel", amount: 200 }
+];
+
+// const food = [];
+// const travel = [];
+// const shopping = [];
+// transactions.filter((val)=>{
+//     if(val.category === "food") return food.push(val);
+//     if(val.category === "travel") return travel.push(val);
+//     if(val.category === "shopping") return shopping.push(val);
+// })
+// let foodTotal;
+// let shoppingTotal;
+// let travelTotal;
+// foodTotal = food.reduce((acc, itr)=>{
+//     return acc + itr.amount;
+// },0);
+// travelTotal = travel.reduce((acc, itr)=>{
+//     return acc + itr.amount;
+// },0);
+// shoppingTotal = shopping.reduce((acc, itr)=>{
+//     return acc + itr.amount;
+// },0)
+// console.log(food,travel,shopping);
+// console.log(foodTotal, travelTotal, shoppingTotal)
+
+
+// const sumTotalCategoryWise = transactions.reduce((acc, curr)=>{
+//     // (acc[curr.category] === undefined)?acc[curr.amount]:acc[curr.category]+=acc[curr.amount]
+//     if (acc[curr.category] === undefined) {
+//         acc[curr.category] = curr.amount;
+//     } else {
+//         acc[curr.category] += curr.amount;
+//     }
+//     return acc;
+// },{});
+// console.log(sumTotalCategoryWise);
+
+
+
+
+// const array = [11,12,131,41,4,1,686,412,];
+// const newArray = array.toSorted((a, b)=>a-b);
+// console.log(newArray);
+// console.log(array.reverse());
+
+
+
+// const arr = [1,4,6,21];
+// const newarr = arr.toReversed().toSpliced(0,2,[1,2,3,5,54,565,23,2]);
+// console.log(newarr);
+// const res = arr.indexOf(21);
+// const ress = arr.lastIndexOf(21)
+// console.log(res);
+// console.log(ress);
+
+
+
+
+// const arr = [1,2,3,4,5,6];
+// for(let i of arr.values()){
+//     console.log(`index number: ${i}`);
+// }
+// for (const element of arr.values()) {
+//     console.log(`property value: ${element}`)
+// }
+// for (const [x, y] of arr.entries()) {
+//     console.log(`${x}: ${y}`)    
+// }
+
+
+
+// const arr = [2,4,6,8];
+// const result = arr.map(val=>val%4 === 0).filter(parseInt);
+// console.log(result);
+
+
+
+
+// const arr = [1,2,3,4,60,5,6,7,90,8];
+// const result = arr.find((val, index, arr)=>(console.log(`${val}:${index} - ${arr[index]}`)));
+// const indexReturner = arr.findIndex((x)=> x >= 10)
+// console.log(indexReturner);
+// console.log(arr.includes(3));
+
+// const arra = "king of javaScript";
+// console.log(Array.from(arr));
+
+
+
+
+
+// const arr = [1,25,34,869,4,5,6,[11,23,65,[9384902,23958689]]];
+// const res = arr.flat(2);
+// const answer = arr.flatMap((x)=>x);
+// console.log(res,answer)
+
+
+
+
+// let division = document.querySelector('.redOne');
+// window.addEventListener('mousemove', (elem)=> {
+//   division.style.top = elem.clientY + 'px';
+//   division.style.left = elem.clientX + 'px';
+// })
+
+
+
+// let ul = document.querySelector('ul');
+// ul.addEventListener('click', (elem)=>{
+//   elem.target.classList.toggle('lt');
+// })
+
+
+
+
+let a = document.querySelector('.a');
+let b = document.querySelector('.b');
+let c = document.querySelector('.c');
+let btn = document.querySelector('button');
+btn.addEventListener('click', elem=>{
+  console.log('elem is clicked');
+})
+
+a.addEventListener('click', elem=>{
+  console.log('a')
+}, true)

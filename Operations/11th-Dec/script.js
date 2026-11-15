@@ -1,60 +1,52 @@
-// let checkStringIsPalindrome = str =>{
-//     let arr = str;
-//     let newStr = ''
-//     for(let i=arr.length-1; i>=0; i--){
-//         newStr += arr[i];
-//     }
-//     if(newStr == str){
-//         return true
-//     } else {
-//         return false
-//     }
+let frm = document.querySelector("form");
+let sub = document.querySelector(".submition");
+let mn = document.querySelector('.main')
+let cardHolder = document.querySelector('.card-holder')
+let inputs = document.querySelectorAll('input')
+sub.addEventListener("click", (elem) => {
+  elem.preventDefault();
 
-// }
-// let ans = checkStringIsPalindrome('pp')
-// console.log(ans);
+  let card = document.createElement("div");
+  card.classList.add("card");
 
-// let checkPrime = num =>{
-//     let count = 0;
-//     for(let i=1; i<=num; i++){
-//         if(num%i == 0){
-//             count++;
-//         }
-//     }
-//     if(count == 2){
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-// let result = checkPrime(11);
-// console.log(result)
+  let profile = document.createElement("div");
+  profile.classList.add("profile");
 
+  let image = document.createElement("img");
+  image.setAttribute(
+    "src",
+    inputs[1].value
+  );
+  image.classList.add("imgStyle");
 
-// let checkPerfectSquare = num => {
-//     for(let i = 1; i<=num; i++){
-//         if(i*i == num){
-//             return true;
-//         }
-//     }
-//     return false
+  let h3 = document.createElement('h3');
+  h3.textContent = inputs[0].value;
+  h3.classList.add('cardH3');
 
-// }
-// let ans = checkPerfectSquare(16)
-// console.log(ans)
+  let p = document.createElement('p');
+  p.textContent = inputs[2].value;
+  p.classList.add('cardPara');
 
+  let h5 = document.createElement('h5');
+  h5.textContent = inputs[3].value;
+  h5.classList.add('cardH5');
 
-let removeVowels = str => {
-    let copy = [...str];
-    let count = 0;
-    for(let k of copy){
-        if( k === 'A'||k ==='I'||k ==='E'||k ==='O'||k ==='U'||k ==='a'||k ==='i'||k ==='e'||k ==='o'||k ==='u'){
-            copy[count] = '';
-        }
-        count++;
-    }
-    return copy;
-}
-let ans = removeVowels('Apple')
-console.log(...ans);
+  let h5Two = document.createElement('h5');
+  h5Two.textContent = inputs[4].value;
+  h5Two.classList.add('cardH5');
 
+  let h4 = document.createElement('h4');
+  h4.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, natus illo sed in dolor fugit iste totam quidem voluptatibus. Provident ratione sunt asperiores ut debitis, commodi ipsum alias unde haru'
+
+  profile.appendChild(image)
+  card.appendChild(profile);
+  card.appendChild(h3);
+  card.appendChild(p);
+  card.appendChild(h5);
+  card.appendChild(h5Two);
+  card.appendChild(h4);
+  cardHolder.appendChild(card)
+
+  frm.reset();
+
+});
