@@ -7,3 +7,4 @@ inp.addEventListener('input', elem=>{
 btn.addEventListener('click', elem=>{
     document.querySelector('span').textContent = `${tot}`
 })
+
