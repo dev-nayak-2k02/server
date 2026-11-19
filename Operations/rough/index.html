@@ -4,53 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email & Password Validator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Download Progress</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="window">
 
-        <div class="form-card">
-            <h1>Welcome Back!</h1>
-            <p class="subtitle">Enter your credentials to continue.</p>
+        <div class="progress-box">
 
-            <form autocomplete="off" id="validator-form">
+            <h2>Downloading..</h2>
 
-                <div class="input-group">
-                    <label for="email">Email Address</label>
-                    <input 
-                        type="text" 
-                        id="email" 
-                        placeholder="Enter your email"
-                        autocomplete="email"
-                    >
-                    <small id="email-error" class="error-message"></small>
-                </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
 
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        placeholder="Enter your password"
-                        autocomplete="current-password"
-                    >
-                    <small id="password-error" class="error-message"></small>
-                </div>
-
-                <button type="submit" id="submit-btn">
-                    Validate
-                </button>
-
-            </form>
-
-            <div id="result-message"></div>
+            <p class="percentage">100%</p>
 
         </div>
 
     </div>
-
     <script src="./script.js"></script>
 </body>
 </html>
