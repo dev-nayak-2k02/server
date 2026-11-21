@@ -1,4 +1,3 @@
- 
 function setDarkOrLight(){
     if(window.matchMedia("(prefers-color-scheme: dark)").matches){
         document.body.classList.add('dark');
@@ -35,3 +34,4 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', ()=
         setDarkOrLight();
     }
 });
+
